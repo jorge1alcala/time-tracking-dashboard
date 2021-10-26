@@ -1,0 +1,154 @@
+:root {
+  /* ### Neutral */
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+
+  /* Primarys */
+  --blue: hsl(246, 80%, 60%);
+  --light-red-work: hsl(15, 100%, 70%);
+  --soft-blue-play: hsl(195, 74%, 62%);
+  --light-red-study: hsl(348, 100%, 68%);
+  --lime-green-exercise: hsl(145, 58%, 55%);
+  --violet-social: hsl(264, 64%, 52%);
+  --soft-orange-self-care: hsl(43, 84%, 65%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  background-color: var(--very-dark-blue);
+}
+/* colors for cads */
+.orange-color {
+  background-color: var(--light-red-work);
+}
+.blue-play {
+  background-color: var(--soft-blue-play);
+}
+.red-study {
+  background-color: var(--light-red-study);
+}
+.green-exercise {
+  background-color: var(--lime-green-exercise);
+}
+.violet-social {
+  background-color: var(--violet-social);
+}
+.yellow-self-care {
+  background-color: var(--soft-orange-self-care);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 60px 0px;
+}
+
+.main-card {
+  max-width: 375px;
+  height: 200px;
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+}
+.user-card {
+  width: 100%;
+  height: 135px;
+  background-color: var(--blue);
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 300;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-card-name p {
+  color: var(--pale-blue);
+}
+.user-card-img {
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-right: 20px;
+}
+.date-card {
+  color: var(--desaturated-blue);
+  padding: 15px;
+}
+.date-card-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.active {
+  color: #fff;
+}
+
+.background {
+  width: 375px;
+  height: 135px;
+  border-radius: 20px;
+}
+
+.time-card {
+  position: relative;
+  overflow: hidden;
+  height: 165px;
+}
+.work_icon {
+  position: absolute;
+  top: -10px;
+  left: 265px;
+}
+.time-card-info {
+  position: absolute;
+  top: 40px;
+  width: 375px;
+  height: 125px;
+  border-radius: 20px;
+  background-color: var(--dark-blue);
+  padding: 25px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.work-hours p {
+  margin-bottom: 24px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  text-align: left;
+  margin-bottom: 24px;
+  stroke: var(--pale-blue);
+}
+.last-week {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.last-week p {
+  color: var(--pale-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
